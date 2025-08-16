@@ -6,16 +6,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+
 @Controller
 public class BeanController {
 
     @Autowired
     BeanConfig beanConfig;
 
-//    http://localhost:8080/bean/beanDto
+
+
+    //    http://localhost:8080/bean/beanDto
     @GetMapping("/bean/beanDto") //url
     @ResponseBody // without html display on screen
     public String getBeanDto(){
         return beanConfig.beanDto()+"";
     }
+
+
 }
