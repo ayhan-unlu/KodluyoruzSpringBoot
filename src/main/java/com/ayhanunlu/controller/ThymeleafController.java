@@ -33,4 +33,11 @@ public class ThymeleafController {
         return "thymeleaf_folder/thymeleaf3TemplatePage";
     }
 
+    //http://localhost:8080/thymeleaf4
+    @GetMapping("thymeleaf4")
+    public String getThymeleaf4Model(Model model){
+        model.addAttribute("key_model1", "value_model ** First value fro Model created with thymeleaf4");
+        return "thymeleaf4TemplatePage";
+    }
+
 }

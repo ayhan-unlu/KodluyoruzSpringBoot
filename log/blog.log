@@ -3356,3 +3356,291 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [	hyme
 2025-08-17T17:00:39.840+03:00  INFO 2636 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-08-17T17:00:39.840+03:00  INFO 2636 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-08-17T17:00:39.840+03:00  INFO 2636 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-17T17:22:54.118+03:00  INFO 2636 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-17T17:22:54.133+03:00  INFO 2636 --- [Thread-6] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T17:22:54.139+03:00  INFO 2636 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-17T17:22:54.143+03:00  INFO 2636 --- [Thread-6] com.ayhanunlu.dto.BeanDto                : After Bean ends I am Here
+2025-08-17T17:22:54.143+03:00  INFO 2636 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T17:22:54.145+03:00  INFO 2636 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-17T17:22:54.153+03:00  INFO 2636 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-17T17:22:54.186+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 17.0.1 with PID 2636 (/Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot)
+2025-08-17T17:22:54.187+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T17:22:54.283+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T17:22:54.284+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-08-17T17:22:54.329+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-17T17:22:54.329+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T17:22:54.329+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T17:22:54.333+03:00  INFO 2636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-17T17:22:54.333+03:00  INFO 2636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 145 ms
+2025-08-17T17:22:54.357+03:00  INFO 2636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17T17:22:54.359+03:00  INFO 2636 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T17:22:54.363+03:00  INFO 2636 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T17:22:54.364+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-17T17:22:54.366+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./memory_persist/denemedb user=ROOT
+2025-08-17T17:22:54.366+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-17T17:22:54.366+03:00  WARN 2636 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17T17:22:54.366+03:00  INFO 2636 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-17T17:22:54.375+03:00  INFO 2636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17T17:22:54.376+03:00  INFO 2636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T17:22:54.378+03:00  INFO 2636 --- [restartedMain] com.ayhanunlu.dto.BeanDto                : Before Bean Starts I am Here
+2025-08-17T17:22:54.384+03:00  WARN 2636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17T17:22:54.497+03:00  INFO 2636 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2025-08-17T17:22:54.501+03:00  INFO 2636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-17T17:22:54.502+03:00  INFO 2636 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17T17:22:54.511+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-17T17:22:54.515+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 0.34 seconds (process running for 1336.354)
+2025-08-17T17:22:54.517+03:00  INFO 2636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   MessageSourceAutoConfiguration matched:
+      - ResourceBundle found bundle file [/Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot/target/classes/messages.properties] (MessageSourceAutoConfiguration.ResourceBundleCondition)
+      - @ConditionalOnMissingBean (names: messageSource; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-08-17T17:28:46.007+03:00  INFO 2636 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-17T17:28:46.012+03:00  INFO 2636 --- [Thread-8] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T17:28:46.015+03:00  INFO 2636 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-17T17:28:46.018+03:00  INFO 2636 --- [Thread-8] com.ayhanunlu.dto.BeanDto                : After Bean ends I am Here
+2025-08-17T17:28:46.018+03:00  INFO 2636 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T17:28:46.019+03:00  INFO 2636 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-17T17:28:46.066+03:00  INFO 2636 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-17T17:28:46.103+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 17.0.1 with PID 2636 (/Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot)
+2025-08-17T17:28:46.103+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T17:28:46.186+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T17:28:46.187+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-08-17T17:28:46.222+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-17T17:28:46.222+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T17:28:46.222+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T17:28:46.226+03:00  INFO 2636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-17T17:28:46.227+03:00  INFO 2636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 123 ms
+2025-08-17T17:28:46.249+03:00  INFO 2636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17T17:28:46.250+03:00  INFO 2636 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T17:28:46.254+03:00  INFO 2636 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T17:28:46.254+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-17T17:28:46.256+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./memory_persist/denemedb user=ROOT
+2025-08-17T17:28:46.256+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-17T17:28:46.256+03:00  WARN 2636 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17T17:28:46.256+03:00  INFO 2636 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-17T17:28:46.263+03:00  INFO 2636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17T17:28:46.264+03:00  INFO 2636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T17:28:46.266+03:00  INFO 2636 --- [restartedMain] com.ayhanunlu.dto.BeanDto                : Before Bean Starts I am Here
+2025-08-17T17:28:46.271+03:00  WARN 2636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17T17:28:46.369+03:00  INFO 2636 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2025-08-17T17:28:46.371+03:00  INFO 2636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-17T17:28:46.372+03:00  INFO 2636 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17T17:28:46.382+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-17T17:28:46.385+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 0.292 seconds (process running for 1688.245)
+2025-08-17T17:28:46.386+03:00  INFO 2636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-17T17:29:32.224+03:00  INFO 2636 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-17T17:29:32.227+03:00  INFO 2636 --- [Thread-12] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T17:29:32.229+03:00  INFO 2636 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-17T17:29:32.232+03:00  INFO 2636 --- [Thread-12] com.ayhanunlu.dto.BeanDto                : After Bean ends I am Here
+2025-08-17T17:29:32.232+03:00  INFO 2636 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T17:29:32.233+03:00  INFO 2636 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-17T17:29:32.256+03:00  INFO 2636 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-17T17:29:32.295+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 17.0.1 with PID 2636 (/Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot)
+2025-08-17T17:29:32.295+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T17:29:32.379+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T17:29:32.380+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-08-17T17:29:32.412+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-17T17:29:32.413+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T17:29:32.413+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T17:29:32.417+03:00  INFO 2636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-17T17:29:32.417+03:00  INFO 2636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 121 ms
+2025-08-17T17:29:32.436+03:00  INFO 2636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17T17:29:32.438+03:00  INFO 2636 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T17:29:32.441+03:00  INFO 2636 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T17:29:32.442+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-08-17T17:29:32.443+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:file:./memory_persist/denemedb user=ROOT
+2025-08-17T17:29:32.443+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-08-17T17:29:32.443+03:00  WARN 2636 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17T17:29:32.443+03:00  INFO 2636 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-17T17:29:32.450+03:00  INFO 2636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17T17:29:32.450+03:00  INFO 2636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T17:29:32.452+03:00  INFO 2636 --- [restartedMain] com.ayhanunlu.dto.BeanDto                : Before Bean Starts I am Here
+2025-08-17T17:29:32.458+03:00  WARN 2636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17T17:29:32.560+03:00  INFO 2636 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2025-08-17T17:29:32.562+03:00  INFO 2636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-17T17:29:32.563+03:00  INFO 2636 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17T17:29:32.573+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-17T17:29:32.576+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 0.292 seconds (process running for 1734.435)
+2025-08-17T17:29:32.577+03:00  INFO 2636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-17T17:34:28.902+03:00  INFO 2636 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-08-17T17:34:28.905+03:00  INFO 2636 --- [Thread-16] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T17:34:28.908+03:00  INFO 2636 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-17T17:34:28.910+03:00  INFO 2636 --- [Thread-16] com.ayhanunlu.dto.BeanDto                : After Bean ends I am Here
+2025-08-17T17:34:28.911+03:00  INFO 2636 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T17:34:28.911+03:00  INFO 2636 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-08-17T17:34:28.917+03:00  INFO 2636 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-08-17T17:34:28.951+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 17.0.1 with PID 2636 (/Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot)
+2025-08-17T17:34:28.951+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T17:34:29.036+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T17:34:29.036+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-08-17T17:34:29.071+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-17T17:34:29.071+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T17:34:29.071+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T17:34:29.074+03:00  INFO 2636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-17T17:34:29.074+03:00  INFO 2636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 122 ms
+2025-08-17T17:34:29.094+03:00  INFO 2636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17T17:34:29.096+03:00  INFO 2636 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T17:34:29.098+03:00  INFO 2636 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T17:34:29.099+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-08-17T17:34:29.100+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:file:./memory_persist/denemedb user=ROOT
+2025-08-17T17:34:29.100+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-08-17T17:34:29.100+03:00  WARN 2636 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17T17:34:29.100+03:00  INFO 2636 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-17T17:34:29.106+03:00  INFO 2636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17T17:34:29.106+03:00  INFO 2636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T17:34:29.108+03:00  INFO 2636 --- [restartedMain] com.ayhanunlu.dto.BeanDto                : Before Bean Starts I am Here
+2025-08-17T17:34:29.113+03:00  WARN 2636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17T17:34:29.215+03:00  INFO 2636 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2025-08-17T17:34:29.218+03:00  INFO 2636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-17T17:34:29.218+03:00  INFO 2636 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17T17:34:29.228+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-17T17:34:29.231+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 0.289 seconds (process running for 2031.089)
+2025-08-17T17:34:29.232+03:00  INFO 2636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-17T18:05:18.026+03:00  WARN 2636 --- [HikariPool-5:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=26m18s789ms).
+2025-08-17T18:06:47.243+03:00  WARN 2636 --- [HikariPool-5:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=1m29s217ms).
+2025-08-17T18:12:28.268+03:00  INFO 2636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-17T18:12:28.268+03:00  INFO 2636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-17T18:12:28.269+03:00  INFO 2636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-17T18:13:36.742+03:00  INFO 2636 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-17T18:13:36.745+03:00  INFO 2636 --- [Thread-20] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T18:13:36.748+03:00  INFO 2636 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-17T18:13:36.750+03:00  INFO 2636 --- [Thread-20] com.ayhanunlu.dto.BeanDto                : After Bean ends I am Here
+2025-08-17T18:13:36.750+03:00  INFO 2636 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T18:13:36.751+03:00  INFO 2636 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-08-17T18:13:36.798+03:00  INFO 2636 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-08-17T18:13:36.835+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 17.0.1 with PID 2636 (/Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot)
+2025-08-17T18:13:36.836+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T18:13:36.920+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T18:13:36.921+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-08-17T18:13:36.954+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-17T18:13:36.954+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T18:13:36.954+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T18:13:36.958+03:00  INFO 2636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-17T18:13:36.958+03:00  INFO 2636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 122 ms
+2025-08-17T18:13:36.979+03:00  INFO 2636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17T18:13:36.980+03:00  INFO 2636 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T18:13:36.983+03:00  INFO 2636 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T18:13:36.984+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-08-17T18:13:36.985+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:file:./memory_persist/denemedb user=ROOT
+2025-08-17T18:13:36.985+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-08-17T18:13:36.986+03:00  WARN 2636 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17T18:13:36.986+03:00  INFO 2636 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-17T18:13:36.992+03:00  INFO 2636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17T18:13:36.992+03:00  INFO 2636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T18:13:36.994+03:00  INFO 2636 --- [restartedMain] com.ayhanunlu.dto.BeanDto                : Before Bean Starts I am Here
+2025-08-17T18:13:36.999+03:00  WARN 2636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17T18:13:37.098+03:00  INFO 2636 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2025-08-17T18:13:37.100+03:00  INFO 2636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-17T18:13:37.101+03:00  INFO 2636 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17T18:13:37.109+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-17T18:13:37.113+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 0.288 seconds (process running for 2770.948)
+2025-08-17T18:13:37.114+03:00  INFO 2636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-17T18:14:10.816+03:00  INFO 2636 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-17T18:14:10.819+03:00  INFO 2636 --- [Thread-24] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T18:14:10.821+03:00  INFO 2636 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-17T18:14:10.824+03:00  INFO 2636 --- [Thread-24] com.ayhanunlu.dto.BeanDto                : After Bean ends I am Here
+2025-08-17T18:14:10.824+03:00  INFO 2636 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T18:14:10.825+03:00  INFO 2636 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-08-17T18:14:10.848+03:00  INFO 2636 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-08-17T18:14:10.884+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 17.0.1 with PID 2636 (/Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/kodluyoruz/KodluyoruzSpringBoot)
+2025-08-17T18:14:10.884+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T18:14:10.969+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T18:14:10.970+03:00  INFO 2636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-08-17T18:14:11.004+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-17T18:14:11.004+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T18:14:11.004+03:00  INFO 2636 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T18:14:11.007+03:00  INFO 2636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-17T18:14:11.007+03:00  INFO 2636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 122 ms
+2025-08-17T18:14:11.027+03:00  INFO 2636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17T18:14:11.028+03:00  INFO 2636 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T18:14:11.032+03:00  INFO 2636 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T18:14:11.032+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-08-17T18:14:11.033+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:file:./memory_persist/denemedb user=ROOT
+2025-08-17T18:14:11.034+03:00  INFO 2636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-08-17T18:14:11.034+03:00  WARN 2636 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-17T18:14:11.034+03:00  INFO 2636 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-17T18:14:11.040+03:00  INFO 2636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-17T18:14:11.040+03:00  INFO 2636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T18:14:11.042+03:00  INFO 2636 --- [restartedMain] com.ayhanunlu.dto.BeanDto                : Before Bean Starts I am Here
+2025-08-17T18:14:11.047+03:00  WARN 2636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-17T18:14:11.146+03:00  INFO 2636 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2025-08-17T18:14:11.148+03:00  INFO 2636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-17T18:14:11.149+03:00  INFO 2636 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-17T18:14:11.157+03:00  INFO 2636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-17T18:14:11.161+03:00  INFO 2636 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 0.287 seconds (process running for 2804.996)
+2025-08-17T18:14:11.162+03:00  INFO 2636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-17T18:18:08.840+03:00  INFO 2636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-17T18:18:08.840+03:00  INFO 2636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-17T18:18:08.842+03:00  INFO 2636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

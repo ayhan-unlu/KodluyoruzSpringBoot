@@ -1,0 +1,50 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Templates</title>
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+</head>
+<body class="container">
+<header>
+</header>
+<main></main>
+<footer>
+</footer>
+<!--        start codes-->
+
+<h1 class="text-center text-primary">Thymeleaf Template Page With BootStrap 5 Template</h1>
+<h2 class="text-left text-danger">This is the danger zone, created with BootStrap 5</h2>
+<h2>Normal Thymeleaf String</h2>
+<h2 th:text="'thymeleaf.org Thymeleaf String'"></h2>
+<hr>
+<p th:text="${key_model1}"></p>
+
+<form action="">
+    <div class="form-group">
+<!--        <label for="name_surname">Your Name And Surname written as label</label>-->
+        <label th:text="#{nameandsurname}" for="name_surname"></label>
+        <input type="text" class="form-control" placeholder="Your Name and Surname" name="name_surname" id="name_surname" autofocus required>
+        <button class="btn btn-primary mt-3">Send</button>
+    </div>
+
+
+</form>
+
+<!--        finish codes-->
+<script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+></script>
+</body>
+</html>
