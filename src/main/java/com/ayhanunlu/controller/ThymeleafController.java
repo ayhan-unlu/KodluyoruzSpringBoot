@@ -4,6 +4,7 @@ import com.ayhanunlu.dto.ProductDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -12,10 +13,20 @@ import java.util.List;
 @Controller
 public class ThymeleafController {
     /*option command L*/
-//@ResponseBody
 
+//Optional root {}
+//http://localhost:8080
+@GetMapping({"/","index"})
+public String index (){
+    return "index";
+}
+
+//###########################################################
+
+//@ResponseBody
     //http://localhost:8080/thymeleaf1
     @GetMapping("/thymeleaf1")
+
 //    @ResponseBody
 
 
@@ -90,8 +101,26 @@ public class ThymeleafController {
         ProductDto productDto = ProductDto.builder().productId(11L).productName("Product-11").productPrice(1000).build();
         model.addAttribute("key_model2", productDto);
 */
-        model.addAttribute("product_list",productDtoList);
+        model.addAttribute("product_list", productDtoList);
 
         return "thymeleaf6TemplatePage";
+    }
+
+
+    //http://localhost:8080/thymeleaf7/4
+    @GetMapping({ "/thymeleaf7", "/thymeleaf7/{id}"})
+    public String getThymeleaf7ModelPath(Model model, @PathVariable (name = "id",required = false) Long id){
+
+    if(id!=null) {
+        model.addAttribute("key_model1", /*"Text which will be replaced by a root option"*/ "Id number= " + id);
+    }else{
+        model.addAttribute("key_model1", "Id number is not found");
+    }
+
+//
+//        ProductDto productDto = ProductDto.builder().productId(1L).productName("Product-1").productPrice(1000).build();
+//        model.addAttribute("key_model2", productDto);
+
+    return "thymeleaf7TemplatePage";
     }
 }
