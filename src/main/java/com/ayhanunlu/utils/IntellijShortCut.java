@@ -7,7 +7,7 @@ public class IntellijShortCut {
     generate constructor getter setter toString---> command n
     comment line ---> option 7
     comment lines ---> option 8
-
+    formatter ---> option command L
 
 
      */
