@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -14,16 +15,16 @@ import java.util.List;
 public class ThymeleafController {
     /*option command L*/
 
-//Optional root {}
+    //Optional root {}
 //http://localhost:8080
-@GetMapping({"/","index"})
-public String index (){
-    return "index";
-}
+    @GetMapping({"/", "index"})
+    public String index() {
+        return "index";
+    }
 
 //###########################################################
 
-//@ResponseBody
+    //@ResponseBody
     //http://localhost:8080/thymeleaf1
     @GetMapping("/thymeleaf1")
 
@@ -83,7 +84,7 @@ public String index (){
         return "thymeleaf5TemplatePage";
     }
 
-
+    /// ///////////////////////////////////////////////////////////////////////////////////////////////
     // Model to send and Object List
 
     //http://localhost:8080/thymeleaf6
@@ -107,20 +108,42 @@ public String index (){
     }
 
 
+    /// ///////////////////////////////////////////////////////////////////////////////////////////////
+    // Path Variable
+
     //http://localhost:8080/thymeleaf7/4
-    @GetMapping({ "/thymeleaf7", "/thymeleaf7/{id}"})
-    public String getThymeleaf7ModelPath(Model model, @PathVariable (name = "id",required = false) Long id){
+    //http://localhost:8080/thymeleaf7/
+    @GetMapping({"/thymeleaf7", "/thymeleaf7/{id}"})
+    public String getThymeleaf7ModelPath(Model model, @PathVariable(name = "id", required = false) Long id) {
 
-    if(id!=null) {
-        model.addAttribute("key_model1", /*"Text which will be replaced by a root option"*/ "Id number= " + id);
-    }else{
-        model.addAttribute("key_model1", "Id number is not found");
-    }
-
+        if (id != null) {
+            model.addAttribute("key_model1", /*"Text which will be replaced by a root option"*/ "Id number= " + id);
+        } else {
+            model.addAttribute("key_model1", "Id number is not found");
+        }
 //
 //        ProductDto productDto = ProductDto.builder().productId(1L).productName("Product-1").productPrice(1000).build();
 //        model.addAttribute("key_model2", productDto);
-
-    return "thymeleaf7TemplatePage";
+        return "thymeleaf7TemplatePage";
     }
+
+    /// ///////////////////////////////////////////////////////////////////////////////////////////////
+    // RequestParam
+    //http://localhost:8080/thymeleaf8?id=4&name=AyhanUnlu
+    @GetMapping("/thymeleaf8")
+    public String getThymeleaf8ModelRequestParam(Model model,
+                                                 @RequestParam(name = "id", required = false, defaultValue = "0") Long id,
+                                                 @RequestParam(name = "name") String name
+    ) {
+        if (id != null) {
+            model.addAttribute("key_model1", "Id number= " + id + " Name & Surname = " + name);
+        }/*else if(id.equals("0")){
+        model.addAttribute("key_model1","Default value is brought");
+    }*/ else {
+            model.addAttribute("key_model1", "Id number is not found");
+        }
+        return "thymeleaf8TemplatePage";
+    }
+
+
 }
