@@ -1,4 +1,4 @@
-package com.ayhanunlu.dto;
+package com.ayhanunlu.zz_tutorials.dto;
 
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;

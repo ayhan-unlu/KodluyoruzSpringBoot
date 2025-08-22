@@ -3067,3 +3067,20 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2025-08-21T14:37:52.820+03:00  INFO 3681 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2025-08-21T14:37:52.837+03:00 ERROR 3681 --- [http-nio-8080-exec-1] c.ayhanunlu.controller.FormController    : From post form There is an Error
 2025-08-21T14:42:10.899+03:00  INFO 3681 --- [http-nio-8080-exec-3] c.ayhanunlu.controller.FormController    : Successfully post formTeacherDto(teacherId=null, teacherNameSurname=ayhan unlu, teacherEmail=ayhan@a, teacherPassword=1234)
+2025-08-21T15:12:42.103+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=12m41s708ms).
+2025-08-21T15:21:13.170+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=8m31s67ms).
+2025-08-21T15:24:45.678+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m2s501ms).
+2025-08-21T15:26:43.047+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m27s367ms).
+2025-08-21T15:42:29.310+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m46s262ms).
+2025-08-21T15:59:31.461+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m2s113ms).
+2025-08-21T16:28:45.623+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m13s916ms).
+2025-08-21T16:37:26.004+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=8m10s358ms).
+2025-08-21T17:34:49.529+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m52s407ms).
+2025-08-21T18:14:36.826+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=13m17s13ms).
+2025-08-21T18:30:15.156+03:00  WARN 3681 --- [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m8s326ms).
+2025-08-21T19:23:26.625+03:00  INFO 3681 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-21T19:23:26.628+03:00  INFO 3681 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-21T19:23:26.631+03:00  INFO 3681 --- [SpringApplicationShutdownHook] com.ayhanunlu.dto.BeanDto                : After Bean ends I am Here
+2025-08-21T19:23:26.633+03:00  INFO 3681 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21T19:23:26.634+03:00  INFO 3681 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-21T19:23:26.637+03:00  INFO 3681 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

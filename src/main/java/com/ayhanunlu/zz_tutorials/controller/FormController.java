@@ -1,6 +1,6 @@
-package com.ayhanunlu.controller;
+package com.ayhanunlu.zz_tutorials.controller;
 
-import com.ayhanunlu.dto.TeacherDto;
+import com.ayhanunlu.zz_tutorials.dto.TeacherDto;
 import jakarta.validation.Valid;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;

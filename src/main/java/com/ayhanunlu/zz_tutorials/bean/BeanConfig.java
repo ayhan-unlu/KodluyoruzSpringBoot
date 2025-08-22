@@ -1,6 +1,6 @@
-package com.ayhanunlu.bean;
+package com.ayhanunlu.zz_tutorials.bean;
 
-import com.ayhanunlu.dto.BeanDto;
+import com.ayhanunlu.zz_tutorials.dto.BeanDto;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;

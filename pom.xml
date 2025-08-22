@@ -146,6 +146,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--Spring Security -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <!--validation-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -183,16 +189,10 @@
         </dependency>
 -->
 
-        <!--thymeleaf security 6 brough from original-->
+        <!--thymeleaf security 6 brought from original-->
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-springsecurity6</artifactId>
-        </dependency>
-
-        <!--Spring Security -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
         <!--  json web token-->
