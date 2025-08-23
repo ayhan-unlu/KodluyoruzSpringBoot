@@ -1,4 +1,4 @@
-package com.ayhanunlu.entity;
+package com.ayhanunlu.data.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

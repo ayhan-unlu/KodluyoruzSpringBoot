@@ -1,4 +1,4 @@
-package com.ayhanunlu.dto;
+package com.ayhanunlu.business.dto;
 
 //DTO: Data Transfer Object
 
