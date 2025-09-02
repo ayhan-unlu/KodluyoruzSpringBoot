@@ -1694,3 +1694,224 @@ Caused by: java.lang.ClassNotFoundException: com.ayhanunlu.data.entity.BaseEntit
 2025-08-29 18:20:22.002  INFO 7971 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-08-29 18:20:22.003  INFO 7971 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-08-29 18:20:22.006  INFO 7971 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-02 10:12:55.169  INFO 5223 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 24.0.2 on Ayhans-MacBook-Pro.local with PID 5223 (/Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot)
+2025-09-02 10:12:55.169  INFO 5223 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-09-02 10:12:55.189  INFO 5223 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-02 10:12:55.189  INFO 5223 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-02 10:12:55.482  INFO 5223 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:12:55.483  INFO 5223 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-09-02 10:12:55.491  INFO 5223 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ayhanunlu.data.repository.EmployeeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-09-02 10:12:55.491  INFO 5223 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2025-09-02 10:12:55.496  INFO 5223 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:12:55.497  INFO 5223 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02 10:12:55.503  INFO 5223 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2025-09-02 10:12:55.665  INFO 5223 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-09-02 10:12:55.667  INFO 5223 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-02 10:12:55.668  INFO 5223 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2025-09-02 10:12:55.685  INFO 5223 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-02 10:12:55.685  INFO 5223 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 496 ms
+2025-09-02 10:12:55.729  INFO 5223 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02 10:12:55.784  INFO 5223 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-02 10:12:55.788  INFO 5223 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/denemedb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2025-09-02 10:12:55.834  INFO 5223 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02 10:12:55.849  INFO 5223 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2025-09-02 10:12:55.890  INFO 5223 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-09-02 10:12:55.924  INFO 5223 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2025-09-02 10:12:56.109  INFO 5223 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-02 10:12:56.112  INFO 5223 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:12:56.240  WARN 5223 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-02 10:12:56.300  INFO 5223 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-02 10:12:56.518  INFO 5223 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-02 10:12:56.520  INFO 5223 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-02 10:12:56.537  INFO 5223 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-09-02 10:12:56.543  INFO 5223 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 1.485 seconds (JVM running for 1.72)
+2025-09-02 10:12:56.675  INFO 5223 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-02 10:12:56.675  INFO 5223 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-02 10:12:56.675  INFO 5223 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-02 10:13:43.558  INFO 5223 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:13:43.560  INFO 5223 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-02 10:13:43.563  INFO 5223 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-02 10:13:44.432  INFO 5244 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 24.0.2 on Ayhans-MacBook-Pro.local with PID 5244 (/Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot)
+2025-09-02 10:13:44.432  INFO 5244 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-09-02 10:13:44.449  INFO 5244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-02 10:13:44.449  INFO 5244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-02 10:13:44.701  INFO 5244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:13:44.701  INFO 5244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-09-02 10:13:44.708  INFO 5244 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ayhanunlu.data.repository.EmployeeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-09-02 10:13:44.709  INFO 5244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-09-02 10:13:44.711  INFO 5244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:13:44.711  INFO 5244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02 10:13:44.717  INFO 5244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2025-09-02 10:13:44.866  INFO 5244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-09-02 10:13:44.869  INFO 5244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-02 10:13:44.869  INFO 5244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2025-09-02 10:13:44.887  INFO 5244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-02 10:13:44.887  INFO 5244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 438 ms
+2025-09-02 10:13:44.926  INFO 5244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02 10:13:44.994  INFO 5244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-02 10:13:44.998  INFO 5244 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/denemedb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2025-09-02 10:13:45.039  INFO 5244 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02 10:13:45.051  INFO 5244 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2025-09-02 10:13:45.086  INFO 5244 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-09-02 10:13:45.111  INFO 5244 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2025-09-02 10:13:45.280  INFO 5244 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-02 10:13:45.282  INFO 5244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:13:45.392  WARN 5244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-02 10:13:45.447  INFO 5244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-02 10:13:45.666  INFO 5244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-02 10:13:45.669  INFO 5244 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-02 10:13:45.685  INFO 5244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-09-02 10:13:45.690  INFO 5244 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 1.364 seconds (JVM running for 1.571)
+2025-09-02 10:13:45.796  INFO 5244 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-02 10:13:45.796  INFO 5244 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-02 10:13:45.797  INFO 5244 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-02 10:14:26.749  INFO 5251 --- [main] c.a.KodluyoruzSpringBootApplicationTests : Starting KodluyoruzSpringBootApplicationTests using Java 24.0.2 on Ayhans-MacBook-Pro.local with PID 5251 (started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot)
+2025-09-02 10:14:26.750  INFO 5251 --- [main] c.a.KodluyoruzSpringBootApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-09-02 10:14:27.037  INFO 5251 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:14:27.038  INFO 5251 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-09-02 10:14:27.047  INFO 5251 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ayhanunlu.data.repository.EmployeeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-09-02 10:14:27.047  INFO 5251 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2025-09-02 10:14:27.049  INFO 5251 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:14:27.050  INFO 5251 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02 10:14:27.057  INFO 5251 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2025-09-02 10:14:27.229  INFO 5251 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02 10:14:27.243  INFO 5251 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2025-09-02 10:14:27.288  INFO 5251 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-09-02 10:14:27.333  INFO 5251 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02 10:14:27.392  INFO 5251 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-02 10:14:27.396  INFO 5251 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2025-09-02 10:14:27.565  INFO 5251 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-02 10:14:27.568  INFO 5251 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:14:27.765  WARN 5251 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-02 10:14:27.903  INFO 5251 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-02 10:14:28.267  INFO 5251 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-02 10:14:28.284  INFO 5251 --- [main] c.a.KodluyoruzSpringBootApplicationTests : Started KodluyoruzSpringBootApplicationTests in 1.626 seconds (JVM running for 1.999)
+2025-09-02 10:14:28.455  INFO 5251 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:14:28.456  INFO 5251 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-02 10:14:28.460  INFO 5251 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-02 10:15:18.056  INFO 5244 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:15:18.058  INFO 5244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-02 10:15:18.061  INFO 5244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-02 10:17:39.337  INFO 5310 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 24.0.2 on Ayhans-MacBook-Pro.local with PID 5310 (/Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot)
+2025-09-02 10:17:39.338  INFO 5310 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-09-02 10:17:39.355  INFO 5310 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-02 10:17:39.355  INFO 5310 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-02 10:17:39.596  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:17:39.597  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-09-02 10:17:39.604  INFO 5310 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ayhanunlu.data.repository.EmployeeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-09-02 10:17:39.604  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-09-02 10:17:39.606  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:17:39.606  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02 10:17:39.612  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2025-09-02 10:17:39.755  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-09-02 10:17:39.757  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-02 10:17:39.757  INFO 5310 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2025-09-02 10:17:39.774  INFO 5310 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-02 10:17:39.774  INFO 5310 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 419 ms
+2025-09-02 10:17:39.812  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02 10:17:39.878  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-02 10:17:39.882  INFO 5310 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/denemedb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2025-09-02 10:17:39.924  INFO 5310 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02 10:17:39.936  INFO 5310 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2025-09-02 10:17:39.970  INFO 5310 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-09-02 10:17:39.994  INFO 5310 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2025-09-02 10:17:40.167  INFO 5310 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-02 10:17:40.169  INFO 5310 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:17:40.280  WARN 5310 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-02 10:17:40.330  INFO 5310 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-02 10:17:40.552  INFO 5310 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-02 10:17:40.554  INFO 5310 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-02 10:17:40.570  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-09-02 10:17:40.576  INFO 5310 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 1.348 seconds (JVM running for 1.552)
+2025-09-02 10:17:40.693  INFO 5310 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-02 10:17:40.693  INFO 5310 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-02 10:17:40.694  INFO 5310 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-02 10:30:00.102  INFO 5494 --- [main] c.a.KodluyoruzSpringBootApplicationTests : Starting KodluyoruzSpringBootApplicationTests using Java 24.0.2 on Ayhans-MacBook-Pro.local with PID 5494 (started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot)
+2025-09-02 10:30:00.103  INFO 5494 --- [main] c.a.KodluyoruzSpringBootApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-09-02 10:30:00.378  INFO 5494 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:30:00.379  INFO 5494 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-09-02 10:30:00.388  INFO 5494 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ayhanunlu.data.repository.EmployeeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-09-02 10:30:00.388  INFO 5494 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2025-09-02 10:30:00.390  INFO 5494 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:30:00.391  INFO 5494 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02 10:30:00.398  INFO 5494 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2025-09-02 10:30:00.564  INFO 5494 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02 10:30:00.580  INFO 5494 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2025-09-02 10:30:00.631  INFO 5494 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-09-02 10:30:00.670  INFO 5494 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02 10:30:00.728  INFO 5494 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-02 10:30:00.733  INFO 5494 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2025-09-02 10:30:00.912  INFO 5494 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-02 10:30:00.915  INFO 5494 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:30:01.090  WARN 5494 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-02 10:30:01.227  INFO 5494 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-02 10:30:01.563  INFO 5494 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-02 10:30:01.579  INFO 5494 --- [main] c.a.KodluyoruzSpringBootApplicationTests : Started KodluyoruzSpringBootApplicationTests in 1.569 seconds (JVM running for 1.945)
+2025-09-02 10:30:01.752  INFO 5494 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:30:01.753  INFO 5494 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-02 10:30:01.757  INFO 5494 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-02 10:33:25.326  INFO 5310 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:33:25.328  INFO 5310 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-02 10:33:25.331  INFO 5310 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-02 10:33:26.152  INFO 5558 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Starting KodluyoruzSpringBootApplication using Java 24.0.2 on Ayhans-MacBook-Pro.local with PID 5558 (/Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot/target/classes started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot)
+2025-09-02 10:33:26.152  INFO 5558 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-09-02 10:33:26.170  INFO 5558 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-02 10:33:26.170  INFO 5558 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-02 10:33:26.436  INFO 5558 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:33:26.436  INFO 5558 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-09-02 10:33:26.446  INFO 5558 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ayhanunlu.data.repository.EmployeeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-09-02 10:33:26.446  INFO 5558 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2025-09-02 10:33:26.448  INFO 5558 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:33:26.449  INFO 5558 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02 10:33:26.455  INFO 5558 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2025-09-02 10:33:26.613  INFO 5558 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-09-02 10:33:26.616  INFO 5558 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-02 10:33:26.616  INFO 5558 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2025-09-02 10:33:26.633  INFO 5558 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-02 10:33:26.634  INFO 5558 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 463 ms
+2025-09-02 10:33:26.678  INFO 5558 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02 10:33:26.748  INFO 5558 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-02 10:33:26.752  INFO 5558 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/denemedb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2025-09-02 10:33:26.791  INFO 5558 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02 10:33:26.806  INFO 5558 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2025-09-02 10:33:26.843  INFO 5558 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-09-02 10:33:26.873  INFO 5558 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2025-09-02 10:33:27.054  INFO 5558 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-02 10:33:27.056  INFO 5558 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:33:27.177  WARN 5558 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-02 10:33:27.229  INFO 5558 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-02 10:33:27.473  INFO 5558 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-02 10:33:27.475  INFO 5558 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-02 10:33:27.493  INFO 5558 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-09-02 10:33:27.499  INFO 5558 --- [restartedMain] c.a.KodluyoruzSpringBootApplication      : Started KodluyoruzSpringBootApplication in 1.465 seconds (JVM running for 1.68)
+2025-09-02 10:33:28.013  INFO 5558 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-02 10:33:28.013  INFO 5558 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-02 10:33:28.014  INFO 5558 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-02 10:33:56.146  INFO 5565 --- [main] c.a.KodluyoruzSpringBootApplicationTests : Starting KodluyoruzSpringBootApplicationTests using Java 24.0.2 on Ayhans-MacBook-Pro.local with PID 5565 (started by ayhanunlu in /Users/ayhanunlu/IdeaProjects/KodluyoruzSpringBoot)
+2025-09-02 10:33:56.147  INFO 5565 --- [main] c.a.KodluyoruzSpringBootApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-09-02 10:33:56.421  INFO 5565 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:33:56.421  INFO 5565 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-09-02 10:33:56.429  INFO 5565 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ayhanunlu.data.repository.EmployeeRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-09-02 10:33:56.430  INFO 5565 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2025-09-02 10:33:56.432  INFO 5565 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-09-02 10:33:56.432  INFO 5565 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02 10:33:56.440  INFO 5565 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2025-09-02 10:33:56.603  INFO 5565 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02 10:33:56.618  INFO 5565 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2025-09-02 10:33:56.668  INFO 5565 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-09-02 10:33:56.709  INFO 5565 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-02 10:33:56.773  INFO 5565 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-02 10:33:56.778  INFO 5565 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2025-09-02 10:33:56.956  INFO 5565 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-02 10:33:56.959  INFO 5565 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:33:57.149  WARN 5565 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-02 10:33:57.289  INFO 5565 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-02 10:33:57.638  INFO 5565 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-09-02 10:33:57.654  INFO 5565 --- [main] c.a.KodluyoruzSpringBootApplicationTests : Started KodluyoruzSpringBootApplicationTests in 1.594 seconds (JVM running for 1.954)
+2025-09-02 10:33:57.830  INFO 5565 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:33:57.830  INFO 5565 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-02 10:33:57.833  INFO 5565 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-02 10:37:47.173  WARN 5558 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s297ms).
+2025-09-02 10:40:48.372  INFO 5558 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 10:40:48.374  INFO 5558 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-02 10:40:48.378  INFO 5558 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
